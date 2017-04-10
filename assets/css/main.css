@@ -138,9 +138,18 @@ header {
   margin-top: 63px;
 }
 
-.text-services {
+.text-services, .text-work {
   font-size: 35px;
   letter-spacing: 2px;
+}
+
+#work {
+  text-align: center;
+  padding: 91px 7px;
+}
+
+.figure-work {
+  margin-top: 63px;
 }
 
 footer {
