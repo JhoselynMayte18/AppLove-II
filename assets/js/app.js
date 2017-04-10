@@ -13,7 +13,7 @@ window.addEventListener('load', function(){
 
       var image = document.createElement("img");
       image.setAttribute("src","assets/img/img-"+ i + ".jpg");
-      //image.setAttribute("class","image-coder");
+      image.setAttribute("width","300");
       figure.appendChild(image);
 
       var title = document.createElement("figcaption");

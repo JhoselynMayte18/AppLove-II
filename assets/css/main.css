@@ -152,6 +152,16 @@ header {
   margin-top: 63px;
 }
 
+.figure-proyect {
+  display: inline-block;
+  margin-bottom: 42px;
+}
+
+.name-proyect {
+  margin-top: 21px;
+  font-weight: 600;
+}
+
 footer {
   text-align: center;
   height: 70px;
