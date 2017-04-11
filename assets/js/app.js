@@ -1,18 +1,18 @@
 window.addEventListener('load', function(){
 
-var proyects = ["TAYMAN GROUP", "NALIA ORGANICS", "BRASS COQ","SUNGENRE","LIVING BOTANICS",
+var projects = ["TAYMAN GROUP", "NALIA ORGANICS", "BRASS COQ","SUNGENRE","LIVING BOTANICS",
 "FOAM KING","VOLITION","INK","GILKON","OUTS APPLES","SHERWOOD","PLATINUM"]
 
-  function addProyect(array){
+  function addProject(array){
     for (var i = 0; i < array.length; i++) {
-      var proyectsContainer = document.getElementById("proyects-container");
+      var projectsContainer = document.getElementById("projects-container");
     /*  var box = document.createElement("div");
       box.setAttribute("class","div-box");
       principal.appendChild(box);*/
 
       var figure = document.createElement("figure");
-      figure.setAttribute("class","figure-proyect");
-      proyectsContainer.appendChild(figure);
+      figure.setAttribute("class","figure-project");
+      projectsContainer.appendChild(figure);
 
       var image = document.createElement("img");
       image.setAttribute("src","assets/img/img-"+ (i+1) + ".jpg");
@@ -21,12 +21,12 @@ var proyects = ["TAYMAN GROUP", "NALIA ORGANICS", "BRASS COQ","SUNGENRE","LIVING
       figure.appendChild(image);
 
       var name = document.createElement("figcaption");
-      name.setAttribute("class","name-proyect");
+      name.setAttribute("class","name-project");
       figure.appendChild(name);
 
       name.appendChild(document.createTextNode(array[i]));
     }
   }
-  addProyect(proyects);
+  addProject(projects);
 
 })
