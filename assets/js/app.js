@@ -27,7 +27,6 @@ var projects = ["TAYMAN GROUP", "NALIA ORGANICS", "BRASS COQ","SUNGENRE","LIVING
       name.appendChild(document.createTextNode(array[i]));
     }
   }
-  
   addProject(projects);
 
 })
