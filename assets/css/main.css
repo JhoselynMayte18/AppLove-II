@@ -162,36 +162,37 @@ header {
   font-weight: 600;
 }
 
-.modal-conte {
+.modal-figure {
   display: none;
-  opacity: 0;
-}
-
-.modal-conte:target {
-  display: block;
-  opacity: 1;
-  background-color: #3bd2a0;
   position: fixed;
   top:0;
-  left: 0;
-  -webkit-transition:all 1s;
-	-moz-transition:all 1s;
-	transition:all 1s;
+  left:0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  background-color: rgba(61, 209, 160, 0.9);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
 }
 
-.modal-figure {
+.modal-figure:target {
+  display: table;
+  opacity: 1;
 }
 
-a.close-modal {
-		position: absolute;
-		top:3px;
-		right:3px;
-		
-    background-color: rgb(88, 221, 25);
-		font-size: 20px;
-		text-decoration: none;
-		line-height: 1;
-		color: #3bd2a0;
+
+
+.close-modal {
+	position: relative;
+	top:20px;
+	right:50px;
+	font-size: 50px;
+  font-weight: 600;
+	text-decoration: none;
+	line-height: 1;
+	color: #3bd2a0;
 	}
 
 

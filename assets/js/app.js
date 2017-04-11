@@ -6,16 +6,13 @@ var projects = ["TAYMAN GROUP", "NALIA ORGANICS", "BRASS COQ","SUNGENRE","LIVING
   function addProject(array){
     for (var i = 0; i < array.length; i++) {
       var projectsContainer = document.getElementById("projects-container");
-    /*  var box = document.createElement("div");
-      box.setAttribute("class","div-box");
-      principal.appendChild(box);*/
 
       var figure = document.createElement("figure");
       figure.setAttribute("class","figure-project");
       projectsContainer.appendChild(figure);
 
       var anImg =  document.createElement("a");
-      anImg.setAttribute("href", "#modal-"+i);
+      anImg.setAttribute("href", "#modal-"+(i+1));
       anImg.setAttribute("class","img-link");
       figure.appendChild(anImg);
 
@@ -30,17 +27,20 @@ var projects = ["TAYMAN GROUP", "NALIA ORGANICS", "BRASS COQ","SUNGENRE","LIVING
       figure.appendChild(name);
 
       name.appendChild(document.createTextNode(array[i]));
+    }
+  }
+  addProject(projects);
 
-//++++++++++++++++++
-      var divModal = document.createElement("div");
-      divModal.setAttribute("class", "modal-conte");
-      divModal.setAttribute("id", "modal-" + i);
-      figure.appendChild(divModal);
+  /*********************Agregando los modales*********************/
+
+  function addModals(array){
+    for (var i = 0; i < array.length; i++) {
+      var projectsBig = document.getElementById("projects-big");
 
       var figureModal = document.createElement("figure");
       figureModal.setAttribute("class", "modal-figure");
-      figureModal.setAttribute("id", "modal-" + i);
-      divModal.appendChild(figureModal);
+      figureModal.setAttribute("id", "modal-" + (i+1));
+      projectsBig.appendChild(figureModal);
 
       var imgModal = document.createElement("img");
       imgModal.setAttribute("src","assets/img/img-"+ (i+1) + ".jpg");
@@ -50,12 +50,11 @@ var projects = ["TAYMAN GROUP", "NALIA ORGANICS", "BRASS COQ","SUNGENRE","LIVING
       var cerrarModal = document.createElement("a");
       cerrarModal.setAttribute("class", "close-modal");
       cerrarModal.setAttribute("href", "#projects-container");
-      divModal.appendChild(cerrarModal);
+      figureModal.appendChild(cerrarModal);
 
-      cerrarModal.appendChild(document.createTextNode("X"));
-
+      cerrarModal.appendChild(document.createTextNode("x"));
     }
   }
-  addProject(projects);
+  addModals(projects);
 
 })
