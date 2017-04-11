@@ -152,15 +152,51 @@ header {
   margin-top: 63px;
 }
 
-.figure-proyect {
+.figure-project {
   display: inline-block;
   margin-bottom: 42px;
 }
 
-.name-proyect {
+.name-project {
   margin-top: 21px;
   font-weight: 600;
 }
+
+.modal-conte {
+  display: none;
+  opacity: 0;
+}
+
+.modal-conte:target {
+  display: block;
+  opacity: 1;
+  background-color: #3bd2a0;
+  position: fixed;
+  top:0;
+  left: 0;
+  -webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	transition:all 1s;
+}
+
+.modal-figure {
+}
+
+a.close-modal {
+		position: absolute;
+		top:3px;
+		right:3px;
+		
+    background-color: rgb(88, 221, 25);
+		font-size: 20px;
+		text-decoration: none;
+		line-height: 1;
+		color: #3bd2a0;
+	}
+
+
+
+
 
 footer {
   text-align: center;
